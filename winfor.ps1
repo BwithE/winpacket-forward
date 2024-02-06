@@ -12,4 +12,5 @@ New-ItemProperty -Path $regPath -Name IPEnableRouter -Value 1 -PropertyType DWOR
 # add a static route using netsh
 netsh interface ipv4 add route $destinationNetwork mask $subnetMask $gatewayAddress
 
+clear
 write-host "Packet forwarding enabled and static route added."
